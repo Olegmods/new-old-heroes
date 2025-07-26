@@ -1,62 +1,69 @@
 {
-	"gauldoth" : {
-		"class" : "necromancer",
-		"female" : false,
-		"special" : false,
+  "gauldoth" :
+  {
+    "class" : "necromancer",
+    "female" : false,
+    "special" : false,
 
-		"texts" : {
-			"name" : "Gauldoth",
-			"biography" : "King Gauldoth Half-Dead founded and and ruled over the kingdom of Nekross, but a sudden temporal oddity led him back to his past, before the fires and destruction of the Reckoning. Half living and half dead, he is a well-tempered necromancer who understands the natural balance of life and death. Gauldoth does not seek destruction, but order amid chaos.",
-			"specialty" : {
-				"description" : "Receives a 5% per level bonus to Intelligence skill percentage.",
-				"tooltip" : "Secondary Skill Bonus: Intelligence",
-				"name" : "Intelligence"
+	"texts" :
+    {
+      "name" : "Gauldoth",
+      "biography" : "King Gauldoth Half-Dead founded and and ruled over the kingdom of Nekross, but a sudden temporal oddity led him back to his past, before the fires and destruction of the Reckoning. Half living and half dead, he is a well-tempered necromancer who understands the natural balance of life and death. Gauldoth does not seek destruction, but order amid chaos.",
+      "specialty" :
+      {
+		"description" : "Receives a 5% per level bonus to Intelligence skill percentage.",
+		"tooltip" : "Secondary Skill Bonus: Intelligence",
+        "name" : "Intelligence"
+      }
+    },
+
+	"images" :
+    {
+      "specialtySmall" : "Un32Intl",
+      "specialtyLarge" : "Un44Intl",
+      "large" : "GauldothLarge",
+      "small" : "GauldothSmall"
+    },
+
+	"skills":
+	[
+		{ "skill" : "necromancy", "level": "basic" },
+		{ "skill" : "intelligence", "level": "basic" }
+	],
+    
+	"specialty" : {
+		"bonuses" : {
+			"intelligence" : {
+				"targetSourceType" : "SECONDARY_SKILL",
+				"type" : "MANA_PER_KNOWLEDGE_PERCENTAGE",
+				"updater" : "TIMES_HERO_LEVEL",
+				"val" : 5,
+				"valueType" : "PERCENT_TO_TARGET_TYPE"
 			}
+		}
+	},
+
+	"spellbook" :
+	[
+	       "animateDead"
+	],
+
+	"army" : [
+		{
+			"creature" : "lich",
+			"min" : 6,
+			"max" : 6
 		},
-
-		"images" : {
-			"specialtySmall" : "Un32Intl",
-			"specialtyLarge" : "Un44Intl",
-			"large" : "GauldothLarge",
-			"small" : "GauldothSmall"
+		{
+			"creature" : "lich",
+			"min" : 3,
+			"max" : 3
 		},
-
-		"skills" : [
-			{
-				"skill" : "necromancy",
-				"level" : "basic"
-			},
-			{
-				"skill" : "intelligence",
-				"level" : "basic"
-			}
-		],
-
-		"specialty" : {
-			"secondary" : "intelligence"
-		},
-
-		"spellbook" : [
-			"animateDead"
-		],
-
-		"army" : [
-			{
-				"creature" : "lich",
-				"min" : 6,
-				"max" : 6
-			},
-			{
-				"creature" : "lich",
-				"min" : 3,
-				"max" : 3
-			},
-			{
-				"creature" : "lich",
-				"min" : 1,
-				"max" : 1
-			}
-		]
-	}
+		{
+			"creature" : "lich",
+			"min" : 1,
+			"max" : 1
+		}
+	]
+  }
 }
-

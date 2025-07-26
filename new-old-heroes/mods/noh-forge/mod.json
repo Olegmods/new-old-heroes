@@ -5,15 +5,17 @@
 	"version" : "",
 	"author" : "Aphra",
 	"contact" : "",
-	"keepDisabled" : true,
-	"heroes" : [
+	"keepDisabled" : true,	
+	"heroes" :
+	[
 		"config/escaton.json"
 	],
-	"depends" : [
-		"hota.interference",
-		"forge"
+	"depends" :
+	[
+		"hota.interference", "forge"
 	],
-	"conflicts" : [
+	"conflicts" :
+	[
 		//"new-old-heroes.noh-forge2k"
 	],
 	"czech" : {

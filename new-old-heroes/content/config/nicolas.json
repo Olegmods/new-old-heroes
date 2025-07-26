@@ -1,63 +1,61 @@
 {
-	"nicolas" : {
-		"class" : "knight",
-		"female" : false,
-		"special" : false,
+  "nicolas" :
+  {
+    "class" : "knight",
+    "female" : false,
+    "special" : false,
 
-		"texts" : {
-			"name" : "Nicolas",
-			"biography" : "King Nicolas Gryphonheart was poisoned by Lord Haart and resurrected by the Necromancers of Deyja in an attempt to take over Erathia. While a Lich, he killed King Finneas Vilmar and assumed the Deyjan throne. During the conclusion of Restoration of Erathia, Catherine left him to kill Lord Haart before finally killing the Lich-King herself, freeing her father's spirit so he may finally be at peace.",
-			"specialty" : {
-				"description" : "All creatures receive +1 Morale.",
-				"tooltip" : "Creature Bonus: Morale",
-				"name" : "Morale"
+	"texts" :
+    {
+      "name" : "Nicolas",
+      "biography" : "King Nicolas Gryphonheart was poisoned by Lord Haart and resurrected by the Necromancers of Deyja in an attempt to take over Erathia. While a Lich, he killed King Finneas Vilmar and assumed the Deyjan throne. During the conclusion of Restoration of Erathia, Catherine left him to kill Lord Haart before finally killing the Lich-King herself, freeing her father's spirit so he may finally be at peace.",
+      "specialty" :
+      {
+		"description" : "All creatures receive +1 Morale.",
+		"tooltip" : "Creature Bonus: Morale",
+        "name" : "Morale"
+      }
+    },
+
+	"images" :
+    {
+      "specialtySmall" : "Un32Mora",
+      "specialtyLarge" : "Un44Mora",
+      "large" : "NicolasLarge",
+      "small" : "NicolasSmall"
+    },
+
+	"skills":
+	[
+		{ "skill" : "leadership", "level": "basic" },
+		{ "skill" : "armorer", "level": "basic" }
+	],
+    
+	"specialty" : {
+		"bonuses" : {
+			"speed" : {
+				"type" : "MORALE",
+				"val" : 1
 			}
+		}
+	},
+	
+	"army" : [
+		{
+			"creature" : "crusader",
+			"min" : 6,
+			"max" : 6
 		},
-
-		"images" : {
-			"specialtySmall" : "Un32Mora",
-			"specialtyLarge" : "Un44Mora",
-			"large" : "NicolasLarge",
-			"small" : "NicolasSmall"
+		{
+			"creature" : "crusader",
+			"min" : 3,
+			"max" : 3
 		},
-
-		"skills" : [
-			{
-				"skill" : "leadership",
-				"level" : "basic"
-			},
-			{
-				"skill" : "armorer",
-				"level" : "basic"
-			}
-		],
-
-		"specialty" : {
-			"bonuses" : {
-				"morale" : {
-					"type" : "MORALE",
-					"val" : 1
-				}
-			}
-		},
-
-		"army" : [
-			{
-				"creature" : "crusader",
-				"min" : 6,
-				"max" : 6
-			},
-			{
-				"creature" : "crusader",
-				"min" : 3,
-				"max" : 3
-			},
-			{
-				"creature" : "crusader",
-				"min" : 1,
-				"max" : 1
-			}
-		]
-	}
+		{
+			"creature" : "crusader",
+			"min" : 1,
+			"max" : 1
+		}
+	]
+  }
 }
-

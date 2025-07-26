@@ -1,61 +1,61 @@
 {
-	"ravenwood" : {
-		"class" : "knight",
-		"female" : true,
-		"special" : false,
+  "ravenwood" :
+  {
+    "class" : "knight",
+    "female" : true,
+    "special" : false,
 
-		"texts" : {
-			"name" : "Ravenwood",
-			"biography" : "Little is known about Taryn Ravenwood. Her immense stature is a rarity in Erathian women, even in a time of war where all must train and prepare for the onslaught. Perhaps an otherworldly or even divine entity, Ravenwood saved many including Lysander from the Reckoning by setting up portals to Axeoth, aided by large winged creatures of powerful nature.",
-			"specialty" : {
-				"description" : "Increases the speed of Angels or Archangels by 1 and their Attack and Defense skills by 5% for every 7 levels (rounded up).",
-				"tooltip" : "Creature Bonus: Angels",
-				"name" : "Angels"
-			}
+	"texts" :
+    {
+      "name" : "Ravenwood",
+      "biography" : "Little is known about Taryn Ravenwood. Her immense stature is a rarity in Erathian women, even in a time of war where all must train and prepare for the onslaught. Perhaps an otherworldly or even divine entity, Ravenwood saved many including Lysander from the Reckoning by setting up portals to Axeoth, aided by large winged creatures of powerful nature.",
+      "specialty" :
+      {
+		"description" : "Increases the speed of Angels or Archangels by 1 and their Attack and Defense skills by 5% for every 7 levels (rounded up).",
+		"tooltip" : "Creature Bonus: Angels",
+        "name" : "Angels"
+      }
+    },
+
+	"images" :
+    {
+      "specialtySmall" : "Un32Angl",
+      "specialtyLarge" : "Un44Angl",
+      "large" : "RavenwoodLarge",
+      "small" : "RavenwoodSmall"
+    },
+
+	"skills":
+	[
+		{ "skill" : "leadership", "level": "basic" },
+		{ "skill" : "airMagic", "level": "basic" }
+	],
+    
+	"specialty" : {
+		"creature" : "angel"
+	},
+
+	"spellbook" :
+	[
+	       "dimensionDoor"
+	],
+
+	"army" : [
+		{
+			"creature" : "pikeman",
+			"min" : 10,
+			"max" : 20
 		},
-
-		"images" : {
-			"specialtySmall" : "Un32Angl",
-			"specialtyLarge" : "Un44Angl",
-			"large" : "RavenwoodLarge",
-			"small" : "RavenwoodSmall"
+		{
+			"creature" : "archer",
+			"min" : 4,
+			"max" : 7
 		},
-
-		"skills" : [
-			{
-				"skill" : "leadership",
-				"level" : "basic"
-			},
-			{
-				"skill" : "airMagic",
-				"level" : "basic"
-			}
-		],
-
-		"specialty" : {
-			"creature" : "angel"
-		},
-
-		"spellbook" : [
-			"dimensionDoor"
-		],
-
-		"army" : [
-			{
-				"creature" : "pikeman",
-				"min" : 10,
-				"max" : 20
-			},
-			{
-				"creature" : "archer",
-				"min" : 4,
-				"max" : 7
-			},
-			{
-				"creature" : "griffin",
-				"min" : 2,
-				"max" : 3
-			}
-		]
-	}
+		{
+			"creature" : "griffin",
+			"min" : 2,
+			"max" : 3
+		}
+	]
+  }
 }

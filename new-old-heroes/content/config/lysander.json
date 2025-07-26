@@ -1,57 +1,56 @@
 {
-	"lysander" : {
-		"class" : "knight",
-		"female" : false,
-		"special" : false,
+  "lysander" :
+  {
+    "class" : "knight",
+    "female" : false,
+    "special" : false,
 
-		"texts" : {
-			"name" : "Lysander",
-			"biography" : "Necromancers attacked Lysander Grpyhonheart's family when he was a child, killing his parents and separating him from his siblings. He was wounded during the attack, and paralyzed for several years. A childhood of impotence has driven this young man to perform great deeds that have culminated in his founding of the Kingdom of Palaedra.",
-			"specialty" : {
-				"description" : "Increases the speed of Pikemen or Halberdiers by 1 and their Attack and Defense skills for each level attained after 1st level.",
-				"tooltip" : "Creature Bonus: Pikemen",
-				"name" : "Pikemen"
-			}
+	"texts" :
+    {
+      "name" : "Lysander",
+      "biography" : "Necromancers attacked Lysander Grpyhonheart's family when he was a child, killing his parents and separating him from his siblings. He was wounded during the attack, and paralyzed for several years. A childhood of impotence has driven this young man to perform great deeds that have culminated in his founding of the Kingdom of Palaedra.",
+      "specialty" :
+      {
+		"description" : "Increases the speed of Pikemen or Halberdiers by 1 and their Attack and Defense skills for each level attained after 1st level.",
+		"tooltip" : "Creature Bonus: Pikemen",
+        "name" : "Pikemen"
+      }
+    },
+
+	"images" :
+    {
+      "specialtySmall" : "Un32Pike",
+      "specialtyLarge" : "Un44Pike",
+      "large" : "LysanderLarge",
+      "small" : "LysanderSmall"
+    },
+
+	"skills":
+	[
+		{ "skill" : "leadership", "level": "basic" },
+		{ "skill" : "armorer", "level": "basic" }
+	],
+    
+	"specialty" : {
+		"creature" : "pikeman"
+	},
+	
+	"army" : [
+		{
+			"creature" : "pikeman",
+			"min" : 10,
+			"max" : 20
 		},
-
-		"images" : {
-			"specialtySmall" : "Un32Pike",
-			"specialtyLarge" : "Un44Pike",
-			"large" : "LysanderLarge",
-			"small" : "LysanderSmall"
+		{
+			"creature" : "pikeman",
+			"min" : 10,
+			"max" : 20
 		},
-
-		"skills" : [
-			{
-				"skill" : "leadership",
-				"level" : "basic"
-			},
-			{
-				"skill" : "armorer",
-				"level" : "basic"
-			}
-		],
-
-		"specialty" : {
-			"creature" : "pikeman"
-		},
-
-		"army" : [
-			{
-				"creature" : "pikeman",
-				"min" : 10,
-				"max" : 20
-			},
-			{
-				"creature" : "pikeman",
-				"min" : 10,
-				"max" : 20
-			},
-			{
-				"creature" : "pikeman",
-				"min" : 10,
-				"max" : 20
-			}
-		]
-	}
+		{
+			"creature" : "pikeman",
+			"min" : 10,
+			"max" : 20
+		}
+	]
+  }
 }

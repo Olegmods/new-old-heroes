@@ -1,68 +1,68 @@
 {
-	"mirael" : {
-		"class" : "navigator",
-		"female" : true,
-		"special" : false,
+  "mirael" :
+  {
+    "class" : "navigator",
+    "female" : true,
+    "special" : false,
 
-		"texts" : {
-			"name" : "Mirael",
-			"biography" : "Sea Witches are typically known for their control over water, but some like Mirael seek greater power than the depths of the ocean can provide. She is well known as the Mistress of the Storms among many magical circles, as her prowess in manipulating multiple bolts of lightning at once is legendary.",
-			"specialty" : {
-				"description" : "Casts Chain Lightning with damage increased by 3% for every n hero levels, where n is the level of the targeted creature.",
-				"tooltip" : "Spell Bonus: Chain Lightning",
-				"name" : "Chain Lightning"
+	"texts" :
+    {
+      "name" : "Mirael",
+      "biography" : "Sea Witches are typically known for their control over water, but some like Mirael seek greater power than the depths of the ocean can provide. She is well known as the Mistress of the Storms among many magical circles, as her prowess in manipulating multiple bolts of lightning at once is legendary.",
+      "specialty" :
+      {
+		"description" : "Casts Chain Lightning with damage increased by 3% for every n hero levels, where n is the level of the targeted creature.",
+		"tooltip" : "Spell Bonus: Chain Lightning",
+        "name" : "Chain Lightning"
+      }
+    },
+
+	"images" :
+    {
+      "specialtySmall" : "Un32ChLt",
+      "specialtyLarge" : "Un44ChLt",
+      "large" : "MiraelLarge",
+      "small" : "MiraelSmall"
+    },
+
+	"skills":
+	[
+		{ "skill" : "wisdom", "level": "basic" },
+		{ "skill" : "airMagic", "level": "basic" }
+	],
+    
+	"specialty" : {
+		"bonuses" : {
+			"lightningBolt" : {
+				"subtype" : "spell.chainLightning",
+				"type" : "SPECIAL_SPELL_LEV",
+				"updater" : "TIMES_HERO_LEVEL",
+				"val" : 3
 			}
+		}
+	},
+	
+	"spellbook" :
+	[
+	       "chainLightning"
+	],
+	
+	"army" : [
+		{
+			"creature": "nymph",
+			"min": 20,
+			"max": 30
 		},
-
-		"images" : {
-			"specialtySmall" : "Un32ChLt",
-			"specialtyLarge" : "Un44ChLt",
-			"large" : "MiraelLarge",
-			"small" : "MiraelSmall"
+		{
+			"creature": "crewmate",
+			"min": 6,
+			"max": 9
 		},
-
-		"skills" : [
-			{
-				"skill" : "wisdom",
-				"level" : "basic"
-			},
-			{
-				"skill" : "airMagic",
-				"level" : "basic"
-			}
-		],
-
-		"specialty" : {
-			"bonuses" : {
-				"lightningBolt" : {
-					"subtype" : "chainLightning",
-					"type" : "SPECIAL_SPELL_LEV",
-					"updater" : "TIMES_HERO_LEVEL",
-					"val" : 3
-				}
-			}
-		},
-
-		"spellbook" : [
-			"chainLightning"
-		],
-
-		"army" : [
-			{
-				"creature" : "nymph",
-				"min" : 20,
-				"max" : 30
-			},
-			{
-				"creature" : "crewmate",
-				"min" : 6,
-				"max" : 9
-			},
-			{
-				"creature" : "pirate",
-				"min" : 4,
-				"max" : 7
-			}
-		]
-	}
+		{
+			"creature": "pirate",
+			"min": 4,
+			"max": 7
+		}
+	]
+  }
 }

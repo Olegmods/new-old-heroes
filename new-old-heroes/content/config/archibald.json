@@ -1,69 +1,68 @@
 {
-	"archibald" : {
-		"class" : "warlock",
-		"female" : false,
-		"special" : false,
+  "archibald" :
+  {
+    "class" : "warlock",
+    "female" : false,
+    "special" : false,
 
-		"texts" : {
-			"name" : "Archibald",
-			"biography" : "Archibald Ironfist is one of the two sons of King Morglin Ironfist. After Morglin's passing, Archibald was quick to seize the throne, accusing Roland of murdering the royal seers. Archibald had himself proclaimed king the next day, and has ruled ever since... with an iron fist, naturally.",
-			"specialty" : {
-				"description" : "Casts Lightning with damage increased by 3% for every n hero levels, where n is the level of the targeted creature.",
-				"tooltip" : "Spell Bonus: Lightning Bolt",
-				"name" : "Lightning Bolt"
+	"texts" :
+    {
+      "name" : "Archibald",
+      "biography" : "Archibald Ironfist is one of the two sons of King Morglin Ironfist. After Morglin's passing, Archibald was quick to seize the throne, accusing Roland of murdering the royal seers. Archibald had himself proclaimed king the next day, and has ruled ever since... with an iron fist, naturally.",
+      "specialty" :
+      {
+		"description" : "Casts Lightning with damage increased by 3% for every n hero levels, where n is the level of the targeted creature.",
+		"tooltip" : "Spell Bonus: Lightning Bolt",
+        "name" : "Lightning Bolt"
+      }
+    },
+
+	"images" :
+    {
+      "specialtySmall" : "Un32LBlt",
+      "specialtyLarge" : "Un44LBlt",
+      "large" : "ArchibaldLarge",
+      "small" : "ArchibaldSmall"
+    },
+
+	"skills":
+	[
+		{ "skill" : "wisdom", "level": "basic" },
+		{ "skill" : "airMagic", "level": "basic" }
+	],
+    
+	"specialty" : {
+		"bonuses" : {
+			"lightningBolt" : {
+				"subtype" : "spell.lightningBolt",
+				"type" : "SPECIAL_SPELL_LEV",
+				"updater" : "TIMES_HERO_LEVEL",
+				"val" : 3
 			}
+		}
+	},
+
+	"spellbook" :
+	[
+	       "lightningBolt"
+	],
+
+	"army" : [
+		{
+			"creature" : "manticore",
+			"min" : 1,
+			"max" : 1
 		},
-
-		"images" : {
-			"specialtySmall" : "Un32LBlt",
-			"specialtyLarge" : "Un44LBlt",
-			"large" : "ArchibaldLarge",
-			"small" : "ArchibaldSmall"
+		{
+			"creature" : "manticore",
+			"min" : 1,
+			"max" : 1
 		},
-
-		"skills" : [
-			{
-				"skill" : "wisdom",
-				"level" : "basic"
-			},
-			{
-				"skill" : "airMagic",
-				"level" : "basic"
-			}
-		],
-
-		"specialty" : {
-			"bonuses" : {
-				"lightningBolt" : {
-					"subtype" : "lightningBolt",
-					"type" : "SPECIAL_SPELL_LEV",
-					"updater" : "TIMES_HERO_LEVEL",
-					"val" : 3
-				}
-			}
-		},
-
-		"spellbook" : [
-			"lightningBolt"
-		],
-
-		"army" : [
-			{
-				"creature" : "manticore",
-				"min" : 1,
-				"max" : 1
-			},
-			{
-				"creature" : "manticore",
-				"min" : 1,
-				"max" : 1
-			},
-			{
-				"creature" : "manticore",
-				"min" : 1,
-				"max" : 1
-			}
-		]
-	}
+		{
+			"creature" : "manticore",
+			"min" : 1,
+			"max" : 1
+		}
+	]
+  }
 }
-

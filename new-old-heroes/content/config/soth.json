@@ -1,57 +1,56 @@
 {
-	"soth" : {
-		"class" : "deathknight",
-		"female" : false,
-		"special" : false,
+  "soth" :
+  {
+    "class" : "deathknight",
+    "female" : false,
+    "special" : false,
 
-		"texts" : {
-			"name" : "Lord Soth",
-			"biography" : "Lord Loren Soth was a Death Knight from Krynn who became the first darklord of Sithicus, a domain in the southern part of The Core of Ravenloft. Though he came to view the ideals of the Knights of Solamnia as hypocrisy, Soth always maintained the forms and appearance of honorable combat.",
-			"specialty" : {
-				"description" : "Increases the speed of Black Knights or Dread Knights by 1 and their Attack and Defense skills by 5% for every 6 levels (rounded up).",
-				"tooltip" : "Creature Bonus: Black Knights",
-				"name" : "Black Knights"
-			}
+	"texts" :
+    {
+      "name" : "Lord Soth",
+      "biography" : "Lord Loren Soth was a Death Knight from Krynn who became the first darklord of Sithicus, a domain in the southern part of The Core of Ravenloft. Though he came to view the ideals of the Knights of Solamnia as hypocrisy, Soth always maintained the forms and appearance of honorable combat.",
+      "specialty" :
+      {
+		"description" : "Increases the speed of Black Knights or Dread Knights by 1 and their Attack and Defense skills by 5% for every 6 levels (rounded up).",
+		"tooltip" : "Creature Bonus: Black Knights",
+        "name" : "Black Knights"
+      }
+    },
+
+	"images" :
+    {
+      "specialtySmall" : "Un32DKni",
+      "specialtyLarge" : "Un44DKni",
+      "large" : "SothLarge",
+      "small" : "SothSmall"
+    },
+
+	"skills":
+	[
+		{ "skill" : "offence", "level": "basic" },
+		{ "skill" : "armorer", "level": "basic" }
+	],
+    
+	"specialty" : {
+		"creature" : "blackKnight"
+	},
+	
+	"army" : [
+		{
+			"creature" : "blackKnight",
+			"min" : 1,
+			"max" : 1
 		},
-
-		"images" : {
-			"specialtySmall" : "Un32DKni",
-			"specialtyLarge" : "Un44DKni",
-			"large" : "SothLarge",
-			"small" : "SothSmall"
+		{
+			"creature" : "blackKnight",
+			"min" : 1,
+			"max" : 1
 		},
-
-		"skills" : [
-			{
-				"skill" : "offence",
-				"level" : "basic"
-			},
-			{
-				"skill" : "armorer",
-				"level" : "basic"
-			}
-		],
-
-		"specialty" : {
-			"creature" : "blackKnight"
-		},
-
-		"army" : [
-			{
-				"creature" : "blackKnight",
-				"min" : 1,
-				"max" : 1
-			},
-			{
-				"creature" : "blackKnight",
-				"min" : 1,
-				"max" : 1
-			},
-			{
-				"creature" : "blackKnight",
-				"min" : 1,
-				"max" : 1
-			}
-		]
-	}
+		{
+			"creature" : "blackKnight",
+			"min" : 1,
+			"max" : 1
+		}
+	]
+  }
 }
