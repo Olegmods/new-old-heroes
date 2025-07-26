@@ -10,10 +10,9 @@
 		"hota.neutralCreatures",
 		"hota.interference"
 	],
-	"compatibility" : 
-	{
+	"compatibility" : {
 		"min" : "1.7.0"
-	},	
+	},
 	"keepDisabled" : true,
 	"heroes" : [
 		"config/gwenneth.json",
