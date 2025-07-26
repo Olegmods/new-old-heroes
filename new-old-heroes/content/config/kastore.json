@@ -1,61 +1,61 @@
 {
-  "kastore" :
-  {
-    "class" : "druid",
-    "female" : false,
-    "special" : false,
+	"kastore" : {
+		"class" : "druid",
+		"female" : false,
+		"special" : false,
 
-	"texts" :
-    {
-      "name" : "Kastore",
-      "biography" : "Kastore is an Elven sorcerer from the world of Terra. His early plans focused on locating the mythical Ancients, but were later abandoned due to the lack of success. As the king of Deyja, the bulk of his new plans consisted of the renaissance of the Heavenly Forge, though his schemes ultimately failed.",
-      "specialty" :
-      {
-		"description" : "Receives a 5% per level bonus to Sorcery skill percentage.",
-		"tooltip" : "Secondary Skill Bonus: Sorcery",
-        "name" : "Sorcery"
-      }
-    },
-
-	"images" :
-    {
-      "specialtySmall" : "Un32Sorc",
-      "specialtyLarge" : "Un44Sorc",
-      "large" : "KastoreLarge",
-      "small" : "KastoreSmall"
-    },
-
-	"skills":
-	[
-		{ "skill" : "wisdom", "level": "basic" },
-		{ "skill" : "sorcery", "level": "basic" }
-	],
-    
-	"specialty" : {
-		"secondary" : "sorcery"
-	},
-	
-	"spellbook" :
-	[
-	       "meteorShower"
-	],
-	
-	"army" : [
-		{
-			"creature" : "centaur",
-			"min" : 12,
-			"max" : 24
+		"texts" : {
+			"name" : "Kastore",
+			"biography" : "Kastore is an Elven sorcerer from the world of Terra. His early plans focused on locating the mythical Ancients, but were later abandoned due to the lack of success. As the king of Deyja, the bulk of his new plans consisted of the renaissance of the Heavenly Forge, though his schemes ultimately failed.",
+			"specialty" : {
+				"description" : "Receives a 5% per level bonus to Sorcery skill percentage.",
+				"tooltip" : "Secondary Skill Bonus: Sorcery",
+				"name" : "Sorcery"
+			}
 		},
-		{
-			"creature" : "woodElf",
-			"min" : 2,
-			"max" : 4
+
+		"images" : {
+			"specialtySmall" : "Un32Sorc",
+			"specialtyLarge" : "Un44Sorc",
+			"large" : "KastoreLarge",
+			"small" : "KastoreSmall"
 		},
-		{
-			"creature" : "woodElf",
-			"min" : 2,
-			"max" : 4
-		}
-	]
-  }
+
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "sorcery",
+				"level" : "basic"
+			}
+		],
+
+		"specialty" : {
+			"secondary" : "sorcery"
+		},
+
+		"spellbook" : [
+			"meteorShower"
+		],
+
+		"army" : [
+			{
+				"creature" : "centaur",
+				"min" : 12,
+				"max" : 24
+			},
+			{
+				"creature" : "woodElf",
+				"min" : 2,
+				"max" : 4
+			},
+			{
+				"creature" : "woodElf",
+				"min" : 2,
+				"max" : 4
+			}
+		]
+	}
 }

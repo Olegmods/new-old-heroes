@@ -1,68 +1,72 @@
 {
-  "balindar" :
-  {
-    "class" : "wizard",
-    "female" : false,
-    "special" : false,
+	"balindar" : {
+		"class" : "wizard",
+		"female" : false,
+		"special" : false,
 
-	"texts" :
-    {
-      "name" : "Balindar",
-      "biography" : "Balindar was the first in Bracada to test the Enrothean technology of using the best steel armor to create statues slated for animation, rather than regular rock, ore, or even precious metals. The rigid-minded golem-building academicians did not welcome this innovation, so Balindar's works, although far superior to their prototypes, still bear the experimental status.",
-      "specialty" :
-      {
-		"description" : "Can upgrade Stone Golems or Iron Golems to Steel Golems.",
-		"tooltip" : "Creature Bonus: Steel Golems",
-        "name" : "Steel Golems"
-      }
-    },
+		"texts" : {
+			"name" : "Balindar",
+			"biography" : "Balindar was the first in Bracada to test the Enrothean technology of using the best steel armor to create statues slated for animation, rather than regular rock, ore, or even precious metals. The rigid-minded golem-building academicians did not welcome this innovation, so Balindar's works, although far superior to their prototypes, still bear the experimental status.",
+			"specialty" : {
+				"description" : "Can upgrade Stone Golems or Iron Golems to Steel Golems.",
+				"tooltip" : "Creature Bonus: Steel Golems",
+				"name" : "Steel Golems"
+			}
+		},
 
-	"images" :
-    {
-      "specialtySmall" : "Un32StlG",
-      "specialtyLarge" : "Un44StlG",
-      "large" : "BalindarLarge",
-      "small" : "BalindarSmall"
-    },
+		"images" : {
+			"specialtySmall" : "Un32StlG",
+			"specialtyLarge" : "Un44StlG",
+			"large" : "BalindarLarge",
+			"small" : "BalindarSmall"
+		},
 
-	"skills":
-	[
-		{ "skill" : "wisdom", "level": "basic" },
-		{ "skill" : "earthMagic", "level": "basic" }
-	],
-    
-	"specialty" : {
-		"base" : {
-			"addInfo" : "steelGolem",
-			"type" : "SPECIAL_UPGRADE"
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			},
+			{
+				"skill" : "earthMagic",
+				"level" : "basic"
+			}
+		],
+
+		"specialty" : {
+			"base" : {
+				"addInfo" : "steelGolem",
+				"type" : "SPECIAL_UPGRADE"
+			},
+			"bonuses" : {
+				"archMage2enchanter" : {
+					"subtype" : "stoneGolem"
+				},
+				"mage2enchanter" : {
+					"subtype" : "ironGolem"
+				}
+			}
 		},
-		"bonuses" : {
-			"archMage2enchanter" : { "subtype" : "stoneGolem" },
-			"mage2enchanter" : { "subtype" : "ironGolem" }
-		}
-	},
-	
-	"spellbook" :
-	[
-	       "shield"
-	],
-	
-	"army" : [
-		{
-			"creature" : "gremlin",
-			"min" : 30,
-			"max" : 40
-		},
-		{
-			"creature" : "stoneGargoyle",
-			"min" : 5,
-			"max" : 7
-		},
-		{
-			"creature" : "ironGolem",
-			"min" : 4,
-			"max" : 5
-		}
-	]
-  }
+
+		"spellbook" : [
+			"shield"
+		],
+
+		"army" : [
+			{
+				"creature" : "gremlin",
+				"min" : 30,
+				"max" : 40
+			},
+			{
+				"creature" : "stoneGargoyle",
+				"min" : 5,
+				"max" : 7
+			},
+			{
+				"creature" : "ironGolem",
+				"min" : 4,
+				"max" : 5
+			}
+		]
+	}
 }

@@ -1,75 +1,75 @@
 {
-  "escaton" :
-  {
-    "class" : "cyborg",
-    "female" : false,
-    "special" : false,
+	"escaton" : {
+		"class" : "cyborg",
+		"female" : false,
+		"special" : false,
 
-	"texts" :
-    {
-      "name" : "Escaton",
-      "biography" : "Escaton was an agent of the Ancients. Since the Kreegans had arrived on Enroth during the Night of Shooting Stars, Escaton had been tasked with destroying the planet to get rid of the foul creatures. He imprisoned the four elemental lords and used the power of the Elemental Planes to attempt to tear the planet apart.",
-      "specialty" :
-      {
-		"description" : "Starts with Expert Wisdom. Casts Expert Armageddon. Allied troops are immune to Armageddon.",
-		"tooltip" : "Mutli-bonus: Doombringer",
-        "name" : "Doombringer"
-      }
-    },
-
-	"images" :
-    {
-      "specialtySmall" : "Un32Arma",
-      "specialtyLarge" : "Un44Arma",
-      "large" : "EscatonLarge",
-      "small" : "EscatonSmall"
-    },
-
-	"skills":
-	[
-		{ "skill" : "wisdom", "level": "expert" },
-		{ "skill" : "interference", "level": "basic" }
-	],
-    
-	"specialty" : {
-		"bonuses" : {
-			"armageddonSpell" :	{
-				"subtype" : "armageddon",
-				"type" : "SPELL",
-				"val" : 3,
-				"valueType" : "INDEPENDENT_MAX"
-			},
-			"armageddonImmune" :	{
-				"subtype" : "armageddon",
-				"type" : "SPELL_IMMUNITY",
-				"val" : 0,
-				"valueType" : "BASE_NUMBER",
-				"addInfo" : 1
+		"texts" : {
+			"name" : "Escaton",
+			"biography" : "Escaton was an agent of the Ancients. Since the Kreegans had arrived on Enroth during the Night of Shooting Stars, Escaton had been tasked with destroying the planet to get rid of the foul creatures. He imprisoned the four elemental lords and used the power of the Elemental Planes to attempt to tear the planet apart.",
+			"specialty" : {
+				"description" : "Starts with Expert Wisdom. Casts Expert Armageddon. Allied troops are immune to Armageddon.",
+				"tooltip" : "Mutli-bonus: Doombringer",
+				"name" : "Doombringer"
 			}
-		}
-	},
-	
-	"spellbook" :
-	[
-	       "armageddon"
-	],
+		},
 
-	"army" : [
-		{
-			"creature" : "jumpTrooper",
-			"min" : 6,
-			"max" : 6
+		"images" : {
+			"specialtySmall" : "Un32Arma",
+			"specialtyLarge" : "Un44Arma",
+			"large" : "EscatonLarge",
+			"small" : "EscatonSmall"
 		},
-		{
-			"creature" : "jumpTrooper",
-			"min" : 3,
-			"max" : 3
+
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "expert"
+			},
+			{
+				"skill" : "interference",
+				"level" : "basic"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"armageddonSpell" : {
+					"subtype" : "armageddon",
+					"type" : "SPELL",
+					"val" : 3,
+					"valueType" : "INDEPENDENT_MAX"
+				},
+				"armageddonImmune" : {
+					"subtype" : "armageddon",
+					"type" : "SPELL_IMMUNITY",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER",
+					"addInfo" : 1
+				}
+			}
 		},
-		{
-			"creature" : "jumpTrooper",
-			"min" : 1,
-			"max" : 1
-		}
-	]
-  }
+
+		"spellbook" : [
+			"armageddon"
+		],
+
+		"army" : [
+			{
+				"creature" : "jumpTrooper",
+				"min" : 6,
+				"max" : 6
+			},
+			{
+				"creature" : "jumpTrooper",
+				"min" : 3,
+				"max" : 3
+			},
+			{
+				"creature" : "jumpTrooper",
+				"min" : 1,
+				"max" : 1
+			}
+		]
+	}
 }

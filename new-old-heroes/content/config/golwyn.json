@@ -1,56 +1,57 @@
 {
-  "golwyn" :
-  {
-    "class" : "knight",
-    "female" : false,
-    "special" : false,
+	"golwyn" : {
+		"class" : "knight",
+		"female" : false,
+		"special" : false,
 
-	"texts" :
-    {
-      "name" : "Golwyn",
-      "biography" : "Golwyn was never the traditionalist: his hair has been bleached blonde since childhood, he refuses to wear a helmet (though begrudgingly accepts he must at least wear a coif), and he owns the bulkiest armour imaginable, in which he probably stores his ego. Although he believes he is a ladies' man, almost all women see him as a walking definition of the word \"compensation\".",
-      "specialty" :
-      {
-		"description" : "Receives a 5% per level bonus to Armorer skill percentage.",
-		"tooltip" : "Secondary Skill Bonus: Armorer",
-        "name" : "Armorer"
-      }
-    },
-
-	"images" :
-    {
-      "specialtySmall" : "Un32Armr",
-      "specialtyLarge" : "Un44Armr",
-      "large" : "GolwynLarge",
-      "small" : "GolwynSmall"
-    },
-
-	"skills":
-	[
-		{ "skill" : "leadership", "level": "basic" },
-		{ "skill" : "armorer", "level": "basic" }
-	],
-    
-	"specialty" : {
-		"secondary" : "armorer"
-	},
-	
-	"army" : [
-		{
-			"creature" : "pikeman",
-			"min" : 10,
-			"max" : 20
+		"texts" : {
+			"name" : "Golwyn",
+			"biography" : "Golwyn was never the traditionalist: his hair has been bleached blonde since childhood, he refuses to wear a helmet (though begrudgingly accepts he must at least wear a coif), and he owns the bulkiest armour imaginable, in which he probably stores his ego. Although he believes he is a ladies' man, almost all women see him as a walking definition of the word \"compensation\".",
+			"specialty" : {
+				"description" : "Receives a 5% per level bonus to Armorer skill percentage.",
+				"tooltip" : "Secondary Skill Bonus: Armorer",
+				"name" : "Armorer"
+			}
 		},
-		{
-			"creature" : "archer",
-			"min" : 4,
-			"max" : 7
+
+		"images" : {
+			"specialtySmall" : "Un32Armr",
+			"specialtyLarge" : "Un44Armr",
+			"large" : "GolwynLarge",
+			"small" : "GolwynSmall"
 		},
-		{
-			"creature" : "griffin",
-			"min" : 2,
-			"max" : 3
-		}
-	]
-  }
+
+		"skills" : [
+			{
+				"skill" : "leadership",
+				"level" : "basic"
+			},
+			{
+				"skill" : "armorer",
+				"level" : "basic"
+			}
+		],
+
+		"specialty" : {
+			"secondary" : "armorer"
+		},
+
+		"army" : [
+			{
+				"creature" : "pikeman",
+				"min" : 10,
+				"max" : 20
+			},
+			{
+				"creature" : "archer",
+				"min" : 4,
+				"max" : 7
+			},
+			{
+				"creature" : "griffin",
+				"min" : 2,
+				"max" : 3
+			}
+		]
+	}
 }

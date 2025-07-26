@@ -1,63 +1,64 @@
 {
-  "waerjak" :
-  {
-    "class" : "barbarian",
-    "female" : false,
-    "special" : false,
+	"waerjak" : {
+		"class" : "barbarian",
+		"female" : false,
+		"special" : false,
 
-	"texts" :
-    {
-      "name" : "Waerjak",
-      "biography" : "Waerjak was raised without a tribe and without a family, wandering the land with his foster father, but he never forgot his Barbarian blood. This intelligent and worldly young man now hopes to one day reclaim the long-forgotten glory and honour of his people.",
-      "specialty" :
-      {
-		"description" : "Bellows a fear-inducing war cry, afflicting enemies with Sorrow for 10 turns at the start of combat.",
-		"tooltip" : "Combat Bonus: War Cry",
-        "name" : "War Cry"
-      }
-    },
-
-	"images" :
-    {
-      "specialtySmall" : "Un32Sorw",
-      "specialtyLarge" : "Un44Sorw",
-      "large" : "WaerjakLarge",
-      "small" : "WaerjakSmall"
-    },
-
-	"skills":
-	[
-		{ "skill" : "offence", "level": "basic" },
-		{ "skill" : "wisdom", "level": "basic" }
-	],
-    
-	"specialty" : {
-		"bonuses" : {
-			"sorrow" : {
-				"subtype" : "sorrow",
-				"type" : "OPENING_BATTLE_SPELL",
-				"val" : 10,
-				"valueType" : "BASE_NUMBER"
+		"texts" : {
+			"name" : "Waerjak",
+			"biography" : "Waerjak was raised without a tribe and without a family, wandering the land with his foster father, but he never forgot his Barbarian blood. This intelligent and worldly young man now hopes to one day reclaim the long-forgotten glory and honour of his people.",
+			"specialty" : {
+				"description" : "Bellows a fear-inducing war cry, afflicting enemies with Sorrow for 10 turns at the start of combat.",
+				"tooltip" : "Combat Bonus: War Cry",
+				"name" : "War Cry"
 			}
-		}
-	},
-	
-	"army" : [
-		{
-			"creature" : "goblinWolfRider",
-			"min" : 5,
-			"max" : 7
 		},
-		{
-			"creature" : "goblinWolfRider",
-			"min" : 5,
-			"max" : 7
+
+		"images" : {
+			"specialtySmall" : "Un32Sorw",
+			"specialtyLarge" : "Un44Sorw",
+			"large" : "WaerjakLarge",
+			"small" : "WaerjakSmall"
 		},
-		{
-			"creature" : "goblinWolfRider",
-			"min" : 5,
-			"max" : 7
-		}
-	]
-  }
+
+		"skills" : [
+			{
+				"skill" : "offence",
+				"level" : "basic"
+			},
+			{
+				"skill" : "wisdom",
+				"level" : "basic"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"sorrow" : {
+					"subtype" : "sorrow",
+					"type" : "OPENING_BATTLE_SPELL",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		},
+
+		"army" : [
+			{
+				"creature" : "goblinWolfRider",
+				"min" : 5,
+				"max" : 7
+			},
+			{
+				"creature" : "goblinWolfRider",
+				"min" : 5,
+				"max" : 7
+			},
+			{
+				"creature" : "goblinWolfRider",
+				"min" : 5,
+				"max" : 7
+			}
+		]
+	}
 }
