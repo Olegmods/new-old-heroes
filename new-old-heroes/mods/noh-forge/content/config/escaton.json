@@ -22,31 +22,26 @@
 			"small" : "EscatonSmall"
 		},
 
-		"skills" : [
-			{
-				"skill" : "wisdom",
-				"level" : "expert"
+	"skills":
+	[
+		{ "skill" : "wisdom", "level": "expert" },
+		{ "skill" : "interference", "level": "basic" }
+	],
+    
+	"specialty" : {
+		"bonuses" : {
+			"armageddonSpell" :	{
+				"subtype" : "spell.armageddon",
+				"type" : "SPELL",
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MAX"
 			},
-			{
-				"skill" : "interference",
-				"level" : "basic"
-			}
-		],
-
-		"specialty" : {
-			"bonuses" : {
-				"armageddonSpell" : {
-					"subtype" : "armageddon",
-					"type" : "SPELL",
-					"val" : 3,
-					"valueType" : "INDEPENDENT_MAX"
-				},
-				"armageddonImmune" : {
-					"subtype" : "armageddon",
-					"type" : "SPELL_IMMUNITY",
-					"val" : 0,
-					"valueType" : "BASE_NUMBER",
-					"addInfo" : 1
+			"armageddonImmune" :	{
+				"subtype" : "spell.armageddon",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER",
+				"addInfo" : 1
 				}
 			}
 		},
