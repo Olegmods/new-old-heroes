@@ -61,13 +61,6 @@
 		"translations" : [
 			"translation/new-old-heroes/polish.json"
 		]
-	},
-	"russian" : {
-		"name" : "Новые старые герои",
-		"description" : "Новые герои, основанные на старых иллюстрациях 3DO и других играх серии. Требуется Horn of the Abyss.",
-		"translations" : [
-			"translation/new-old-heroes/russian.json"
-		]
-	}
+	}	
 
 }
