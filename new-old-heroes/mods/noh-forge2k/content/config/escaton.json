@@ -34,13 +34,13 @@
 	"specialty" : {
 		"bonuses" : {
 			"armageddonSpell" :	{
-				"subtype" : "spell.armageddon",
+				"subtype" : "armageddon",
 				"type" : "SPELL",
 				"val" : 3,
 				"valueType" : "INDEPENDENT_MAX"
 			},
 			"armageddonImmune" :	{
-				"subtype" : "spell.armageddon",
+				"subtype" : "armageddon",
 				"type" : "SPELL_IMMUNITY",
 				"val" : 0,
 				"valueType" : "BASE_NUMBER",

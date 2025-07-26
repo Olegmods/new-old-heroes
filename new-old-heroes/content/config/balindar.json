@@ -33,12 +33,12 @@
     
 	"specialty" : {
 		"base" : {
-			"addInfo" : "creature.steelGolem",
+			"addInfo" : "steelGolem",
 			"type" : "SPECIAL_UPGRADE"
 		},
 		"bonuses" : {
-			"archMage2enchanter" : { "subtype" : "creature.stoneGolem" },
-			"mage2enchanter" : { "subtype" : "creature.ironGolem" }
+			"archMage2enchanter" : { "subtype" : "stoneGolem" },
+			"mage2enchanter" : { "subtype" : "ironGolem" }
 		}
 	},
 	

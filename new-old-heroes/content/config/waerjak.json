@@ -34,7 +34,7 @@
 	"specialty" : {
 		"bonuses" : {
 			"sorrow" : {
-				"subtype" : "spell.sorrow",
+				"subtype" : "sorrow",
 				"type" : "OPENING_BATTLE_SPELL",
 				"val" : 10,
 				"valueType" : "BASE_NUMBER"

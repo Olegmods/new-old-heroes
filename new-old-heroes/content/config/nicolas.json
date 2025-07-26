@@ -33,7 +33,7 @@
     
 	"specialty" : {
 		"bonuses" : {
-			"speed" : {
+			"morale" : {
 				"type" : "MORALE",
 				"val" : 1
 			}
